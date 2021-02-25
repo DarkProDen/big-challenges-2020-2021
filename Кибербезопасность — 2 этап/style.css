@@ -2,3 +2,50 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  display: grid;
+  grid-template:
+    'header header' auto
+    'nav main' auto
+    'footer footer' auto;
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(238, 181, 108);
+}
+
+main {
+  grid-area: main;
+  padding: 10px;
+}
+
+nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  background-color: rgb(130, 130, 255);
+  border: blue 2px solid;
+  border-bottom: 0;
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav a:last-child {
+  border-bottom: blue 2px solid;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: darkblue;
+  color: white;
+  padding: 10px;
+}
