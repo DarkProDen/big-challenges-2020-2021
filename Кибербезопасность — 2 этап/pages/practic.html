@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      
+      <div class="text" hidden="true">
+        <div class="background-color padding1">
+          <h2 class="center">Пример на практике</h2>
+          <div class="encryptor">
+            <h2 class="center">Мой шифровальщик:</h2>
+
+            <div class="row">
+              Ключ:<br />
+              <input id="key-encrypt" maxlength="30" value="" />
+            </div>
+
+            <div class="row">
+              Сообщение:<br /><br />
+              <textarea
+                id="input-encrypt"
+                rows="5"
+                cols="55"
+                maxlength="3000"
+              ></textarea>
+            </div>
+            <div class="row flex-center">
+              <button id="encrypt-btn" class="btn1">Зашифровать</button>
+            </div>
+            <div class="row">
+              Зашифрованное cообщение:<br /><br />
+              <textarea
+                id="output-encrypt"
+                rows="5"
+                cols="55"
+                maxlength="3000"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="decoder">
+            <h2 class="center">Дешифратор:</h2>
+
+            <div class="row">
+              Ключ:<br />
+              <input id="key-decipher" maxlength="30" value="" />
+            </div>
+
+            <div class="row">
+              Зашифрованное сообщение:<br /><br />
+              <textarea
+                id="input-decipher"
+                rows="5"
+                cols="55"
+                maxlength="3000"
+              ></textarea>
+            </div>
+            <div class="row flex-center">
+              <button id="decipher-btn" class="btn1">Расшифровать</button>
+            </div>
+            <div class="row">
+              Расшифрованное cообщение:<br /><br />
+              <textarea
+                id="output-decipher"
+                rows="5"
+                cols="55"
+                maxlength="3000"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+</body>
+</html>
