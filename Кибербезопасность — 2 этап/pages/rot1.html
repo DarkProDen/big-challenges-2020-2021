@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ROT1</title>
     <link rel="stylesheet" href="../style.css" />
+    <script src="../js/rot1.js"></script>
   </head>
-
   <body>
     <header>
       <h1>ROT1</h1>
@@ -37,8 +37,18 @@
         you did last summer» станет «J lopx xibu zpv eje mbtu tvnnfs».Но из-за
         легкой дешифрациии его нельзя использовать для серьезных нужд.
       </p>
+      <h3>Пример на практике</h3>
+      <p>
+        Введите сообщение для зашифровки:<br />
+        <input id="messageToEncrypt" type="text" /><br />
+        <button onclick="encryptBtnClickHandler()">Зашифровать</button><br />
+        <input id="encryptedMessage" type="text" /><br />
+        Введите сообщение для расшифровки:<br />
+        <input id="messageToDecrypt" type="text" /><br />
+        <button onclick="decryptBtnClickHandler()">Расшифровать</button><br />
+        <input id="decryptedMessage" type="text" />
+      </p>
     </main>
     <footer>Кванториум, Рязань, 2021</footer>
-    <script src="index.js"></script>
   </body>
 </html>
