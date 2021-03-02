@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Азбука Морзе</title>
     <link rel="stylesheet" href="../style.css" />
+    <script src="../js/morse.js"></script>
   </head>
 
   <body>
@@ -45,16 +46,15 @@
       <h3>Пример на практике</h3>
       <p>
         Введите сообщение для зашифровки:<br />
-        <input id="" type="text" /><br />
-        <button onclick="">Зашифровать</button><br />
-        <input id="" type="text" /><br />
+        <input id="messageToEncrypt" type="text" value="Hello world" /><br />
+        <button onclick="encryptBtnClickHandler()">Зашифровать</button><br />
+        <input id="encryptedMessage" type="text" /><br />
         Введите сообщение для расшифровки:<br />
-        <input id="" type="text" /><br />
-        <button onclick="">Расшифровать</button><br />
-        <input id="" type="text" />
+        <input id="messageToDecrypt" type="text" /><br />
+        <button onclick="decryptBtnClickHandler()">Расшифровать</button><br />
+        <input id="decryptedMessage" type="text" />
       </p>
     </main>
     <footer>Кванториум, Рязань, 2021</footer>
-    <script src="index.js"></script>
   </body>
 </html>
