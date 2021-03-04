@@ -12,47 +12,49 @@
     <header>
       <h1>Азбука Морзе</h1>
     </header>
-    <nav>
-      <a href="../index.html">Кибербезопасность</a>
-      <a href="stenography.html">Стеганография</a>
-      <a href="rot1.html">ROT1</a>
-      <a href="transposition.html">Транспозиция</a>
-      <a href="morseCode.html">Азбука Морзе</a>
-      <a href="caesarCipher.html">Шифр Цезаря</a>
-      <a href="monoAlphabetReplacement.html">Моноалфавитная замена</a>
-      <a href="VigenereCode.html">Шифр Виженера</a>
-      <a href="cods.html">Настоящие коды</a>
-      <a href="enigmaCode.html">Шифр Энигмы</a>
-      <a href="ublicKeyEncryption.html">Шифрование публичным ключом</a>
-    </nav>
+    <div class="wrap">
+      <nav>
+        <a href="../index.html">Кибербезопасность</a>
+        <a href="stenography.html">Стеганография</a>
+        <a href="rot1.html">ROT1</a>
+        <a href="transposition.html">Транспозиция</a>
+        <a href="morseCode.html">Азбука Морзе</a>
+        <a href="caesarCipher.html">Шифр Цезаря</a>
+        <a href="monoAlphabetReplacement.html">Моноалфавитная замена</a>
+        <a href="VigenereCode.html">Шифр Виженера</a>
+        <a href="cods.html">Настоящие коды</a>
+        <a href="enigmaCode.html">Шифр Энигмы</a>
+        <a href="ublicKeyEncryption.html">Шифрование публичным ключом</a>
+      </nav>
 
-    <main>
-      <img
-        src="https://s3.tproger.ru/uploads/2015/11/morsecodeletters-1024x566.jpg"
-      />
-      <p>
-        В азбуке Морзе каждая буква алфавита, все цифры и наиболее важные знаки
-        препинания имеют свой код, состоящий из череды коротких и длинных
-        сигналов, часто называемых «точками и тире».В азбуке Морзе каждая буква
-        алфавита, все цифры и наиболее важные знаки препинания имеют свой код,
-        состоящий из череды коротких и длинных сигналов, часто называемых
-        «точками и тире». В отличие от большинства шифров, азбука Морзе
-        используется не для затруднения чтения сообщений, а наоборот, для
-        облегчения их передачи (с помощью телеграфа). Длинные и короткие сигналы
-        посылаются с помощью включения и выключения электрического тока.
-        Телеграф и азбука Морзе навсегда изменили мир, сделав возможной
-        молниеносную передачу информации между разными странами.
-      </p>
-      <h3>Пример на практике</h3>
-      Введите сообщение для зашифровки:
-      <input id="messageToEncrypt" type="text" value="Hello world" />
-      <button onclick="encryptBtnClickHandler()">Зашифровать</button>
-      <input id="encryptedMessage" type="text" />
-      Введите сообщение для расшифровки:
-      <input id="messageToDecrypt" type="text" />
-      <button onclick="decryptBtnClickHandler()">Расшифровать</button>
-      <input id="decryptedMessage" type="text" />
-    </main>
+      <main>
+        <img
+          src="https://s3.tproger.ru/uploads/2015/11/morsecodeletters-1024x566.jpg"
+        />
+        <p>
+          В азбуке Морзе каждая буква алфавита, все цифры и наиболее важные
+          знаки препинания имеют свой код, состоящий из череды коротких и
+          длинных сигналов, часто называемых «точками и тире».В азбуке Морзе
+          каждая буква алфавита, все цифры и наиболее важные знаки препинания
+          имеют свой код, состоящий из череды коротких и длинных сигналов, часто
+          называемых «точками и тире». В отличие от большинства шифров, азбука
+          Морзе используется не для затруднения чтения сообщений, а наоборот,
+          для облегчения их передачи (с помощью телеграфа). Длинные и короткие
+          сигналы посылаются с помощью включения и выключения электрического
+          тока. Телеграф и азбука Морзе навсегда изменили мир, сделав возможной
+          молниеносную передачу информации между разными странами.
+        </p>
+        <h3>Пример на практике</h3>
+        Введите сообщение для зашифровки:
+        <input id="messageToEncrypt" type="text" value="Hello world" />
+        <button onclick="encryptBtnClickHandler()">Зашифровать</button>
+        <input id="encryptedMessage" type="text" />
+        Введите сообщение для расшифровки:
+        <input id="messageToDecrypt" type="text" />
+        <button onclick="decryptBtnClickHandler()">Расшифровать</button>
+        <input id="decryptedMessage" type="text" />
+      </main>
+    </div>
     <footer>Кванториум, Рязань, 2021</footer>
   </body>
 </html>

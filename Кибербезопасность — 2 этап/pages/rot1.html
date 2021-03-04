@@ -11,41 +11,43 @@
     <header>
       <h1>ROT1</h1>
     </header>
-    <nav>
-      <a href="../index.html">Кибербезопасность</a>
-      <a href="stenography.html">Стеганография</a>
-      <a href="rot1.html">ROT1</a>
-      <a href="transposition.html">Транспозиция</a>
-      <a href="morseCode.html">Азбука Морзе</a>
-      <a href="caesarCipher.html">Шифр Цезаря</a>
-      <a href="monoAlphabetReplacement.html">Моноалфавитная замена</a>
-      <a href="VigenereCode.html">Шифр Виженера</a>
-      <a href="cods.html">Настоящие коды</a>
-      <a href="enigmaCode.html">Шифр Энигмы</a>
-      <a href="ublicKeyEncryption.html">Шифрование публичным ключом</a>
-    </nav>
+    <div class="wrap">
+      <nav>
+        <a href="../index.html">Кибербезопасность</a>
+        <a href="stenography.html">Стеганография</a>
+        <a href="rot1.html">ROT1</a>
+        <a href="transposition.html">Транспозиция</a>
+        <a href="morseCode.html">Азбука Морзе</a>
+        <a href="caesarCipher.html">Шифр Цезаря</a>
+        <a href="monoAlphabetReplacement.html">Моноалфавитная замена</a>
+        <a href="VigenereCode.html">Шифр Виженера</a>
+        <a href="cods.html">Настоящие коды</a>
+        <a href="enigmaCode.html">Шифр Энигмы</a>
+        <a href="ublicKeyEncryption.html">Шифрование публичным ключом</a>
+      </nav>
 
-    <main>
-      <img
-        src="https://s3.tproger.ru/uploads/2015/11/670px-Write-in-Code-Step-4Bullet1.jpg"
-      />
-      <p>
-        Ключ прост: каждая буква заменяется на следующую за ней в
-        алфавите.«ROT1» значит «ROTate 1 letter forward through the alphabet»
-        (англ. «сдвиньте алфавит на одну букву вперед»). Сообщение «I know what
-        you did last summer» станет «J lopx xibu zpv eje mbtu tvnnfs».Но из-за
-        легкой дешифрациии его нельзя использовать для серьезных нужд.
-      </p>
-      <h3>Пример на практике</h3>
-      Введите сообщение для зашифровки:
-      <input id="messageToEncrypt" type="text" value="Hello world" />
-      <button onclick="encryptBtnClickHandler()">Зашифровать</button>
-      <input id="encryptedMessage" type="text" />
-      Введите сообщение для расшифровки:
-      <input id="messageToDecrypt" type="text" />
-      <button onclick="decryptBtnClickHandler()">Расшифровать</button>
-      <input id="decryptedMessage" type="text" />
-    </main>
+      <main>
+        <img
+          src="https://s3.tproger.ru/uploads/2015/11/670px-Write-in-Code-Step-4Bullet1.jpg"
+        />
+        <p>
+          Ключ прост: каждая буква заменяется на следующую за ней в
+          алфавите.«ROT1» значит «ROTate 1 letter forward through the alphabet»
+          (англ. «сдвиньте алфавит на одну букву вперед»). Сообщение «I know
+          what you did last summer» станет «J lopx xibu zpv eje mbtu tvnnfs».Но
+          из-за легкой дешифрациии его нельзя использовать для серьезных нужд.
+        </p>
+        <h3>Пример на практике</h3>
+        Введите сообщение для зашифровки:
+        <input id="messageToEncrypt" type="text" value="Hello world" />
+        <button onclick="encryptBtnClickHandler()">Зашифровать</button>
+        <input id="encryptedMessage" type="text" />
+        Введите сообщение для расшифровки:
+        <input id="messageToDecrypt" type="text" />
+        <button onclick="decryptBtnClickHandler()">Расшифровать</button>
+        <input id="decryptedMessage" type="text" />
+      </main>
+    </div>
     <footer>Кванториум, Рязань, 2021</footer>
   </body>
 </html>

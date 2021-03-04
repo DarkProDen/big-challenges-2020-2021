@@ -5,22 +5,16 @@
 }
 
 body {
-  display: grid;
-  grid-template:
-    'header header' auto
-    'nav main' auto
-    'footer footer' auto;
 }
 
 header {
-  grid-area: header;
   text-align: center;
   padding: 10px;
-  background-color: rgb(255, 224, 183);
+  background-image: linear-gradient(45deg, #00afaa, #00a0e3);
+  color: white;
 }
 
 main {
-  grid-area: main;
   padding: 10px;
   font-size: 16pt;
   display: flex;
@@ -32,36 +26,35 @@ main img {
   max-width: 50%;
   align-self: center;
 }
-
+.wrap {
+  display: flex;
+  align-items: stretch;
+}
 nav {
-  grid-area: nav;
   display: flex;
   flex-direction: column;
+  background-image: linear-gradient(15deg, #00a0e3, #00afaa);
+  width: min-content;
 }
 
 nav a {
-  background-color: rgb(185, 185, 255);
-  border: blue 2px solid;
   border-bottom: 0;
-  color: black;
+  color: white;
   text-decoration: none;
   padding: 5px 10px;
   font-size: 16pt;
 }
 
-nav a:hover {
-  background-color: darkblue;
+nav a:hover,
+nav a:focus {
+  background-image: linear-gradient(45deg, #a519a5, #521cea);
   color: white;
-}
-
-nav a:last-child {
-  border-bottom: blue 2px solid;
 }
 
 footer {
   grid-area: footer;
   text-align: center;
-  background-color: darkblue;
+  background-image: linear-gradient(135deg, #00a0e3, #00afaa);
   color: white;
   padding: 10px;
 }
